@@ -5,9 +5,14 @@
 while True:
 
     try:
-        a = int(input("Enter a number "))
-        a=int(a)
+        hours = int(input("Enter a number "))
+        hours=int(hours)
+        rate = int(input("Enter the rate "))
+        rate=int(rate)
         break
     except ValueError:
         print("Error, please enter numeric input ")
+        
+payment=hours*rate
+print("Pay = ",payment)        
 
